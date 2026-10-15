@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Date?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page-wrap">
+
+        <!-- FIRST SCREEN -->
+        <section class="card" id="questionCard">
+            <div class="heart-icon">💖</div>
+            <h1>Hey beautiful...</h1>
+            <p>Will you go on a date with me?</p>
+
+            <div class="button-row">
+                <button id="yesBtn" class="yes-btn" type="button">
+                    Yes 😊
+                </button>
+
+                <button id="noBtn" class="no-btn" type="button">
+                    No
+                </button>
+            </div>
+        </section>
+
+
+        <!-- DATE AND TIME SCREEN -->
+        <section class="card hidden" id="dateCard">
+            <div class="heart-icon">🌷</div>
+            <h1>Let's plan our date</h1>
+            <p>Choose the date and time that work best for you.</p>
+
+            <form id="dateForm">
+
+                <label for="nameInput">Your name</label>
+                <input
+                    id="nameInput"
+                    type="text"
+                    placeholder="What should I call you?"
+                    required
+                >
+
+                <label for="dateInput">Preferred date</label>
+                <input
+                    id="dateInput"
+                    type="date"
+                    required
+                >
+
+                <label for="timeInput">Preferred time</label>
+                <input
+                    id="timeInput"
+                    type="time"
+                    required
+                >
+
+                <label for="noteInput">
+                    Anything you'd like me to know? (optional)
+                </label>
+
+                <textarea
+                    id="noteInput"
+                    rows="3"
+                    placeholder="Your message..."
+                ></textarea>
+
+                <button
+                    class="next-btn"
+                    id="dateNextBtn"
+                    type="submit"
+                >
+                    Continue 💕
+                </button>
+
+            </form>
+        </section>
+
+
+        <!-- VENUE SCREEN -->
+        <section class="card hidden" id="venueCard">
+            <div class="heart-icon">📍</div>
+            <h1>Our meeting place</h1>
+            <p>Here's the suggested venue for our date:</p>
+
+            <div class="venue-box">
+                <h2>The Garden Restaurant</h2>
+                <p>Near Custom Area, Maiduguri</p>
+            </div>
+
+            <p>You can continue and choose what you'd like to eat.</p>
+
+            <button
+                class="next-btn"
+                id="venueNextBtn"
+                type="button"
+            >
+                Choose food 🍕
+            </button>
+
+            <button
+                class="back-btn"
+                id="venueBackBtn"
+                type="button"
+            >
+                Back
+            </button>
+        </section>
+
+
+        <!-- FOOD SCREEN -->
+        <section class="card hidden" id="foodCard">
+            <div class="heart-icon">🍽️</div>
+            <h1>What would you like to eat?</h1>
+            <p>Pick whichever sounds good to you.</p>
+
+            <div class="food-options">
+
+                <button
+                    class="food-btn"
+                    data-food="Local Dish"
+                    type="button"
+                >
+                    🍲 Local Dish
+                </button>
+
+                <button
+                    class="food-btn"
+                    data-food="Grilled/Shawarma"
+                    type="button"
+                >
+                    🌯 Grilled / Shawarma
+                </button>
+
+                <button
+                    class="food-btn"
+                    data-food="Pizza/Fast Food"
+                    type="button"
+                >
+                    🍕 Pizza / Fast Food
+                </button>
+
+                <button
+                    class="food-btn"
+                    data-food="Surprise me"
+                    type="button"
+                >
+                    🎁 Surprise me
+                </button>
+
+            </div>
+
+            <button
+                class="back-btn"
+                id="foodBackBtn"
+                type="button"
+            >
+                Back
+            </button>
+        </section>
+
+
+        <!-- FINAL SCREEN -->
+        <section class="card hidden" id="finalCard">
+            <div class="heart-icon">💞</div>
+            <h1>It's a Date!</h1>
+
+            <p id="finalMessage"></p>
+
+            <p class="sweet-note">
+                I'll handle everything. Just come ready to smile 💕
+            </p>
+
+            <button
+                class="next-btn"
+                id="whatsappBtn"
+                type="button"
+            >
+                Send my choices on WhatsApp 💬
+            </button>
+
+            <p class="small-note">
+                WhatsApp will open with your choices ready to send.
+                You can review the message before sending it.
+            </p>
+
+            <button
+                class="back-btn"
+                id="finalBackBtn"
+                type="button"
+            >
+                Change my choices
+            </button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
